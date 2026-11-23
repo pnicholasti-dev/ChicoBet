@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicoBet Casino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-left">
+            <h1 class="logo">👑 ChicoBet</h1>
+        </div>
+        <div class="header-right">
+            <div class="balance-box">
+                <span class="balance-label">Saldo</span>
+                <span id="balance" class="balance-value">R$ 10.000,00</span>
+            </div>
+            <button id="btn-reset" class="btn-reset" title="Resetar saldo">↻ Resetar</button>
+            <button id="btn-home" class="btn-home hidden" title="Voltar ao início">← Catálogo</button>
+        </div>
+    </header>
+
+    <main id="catalog" class="catalog active">
+        <div class="hero">
+            <h2 class="hero-title">Bem-vindo ao ChicoBet</h2>
+            <p class="hero-subtitle">Escolha um jogo, defina sua aposta e boa sorte!</p>
+        </div>
+        <div class="game-grid">
+            <div class="game-card" data-game="blackjack">
+                <div class="card-icon">🃏</div>
+                <h3>Blackjack</h3>
+                <p>Hit · Stand · Double Down</p>
+            </div>
+            <div class="game-card" data-game="crash">
+                <div class="card-icon">🚀</div>
+                <h3>Crash</h3>
+                <p>Saque antes da explosão</p>
+            </div>
+            <div class="game-card" data-game="mines">
+                <div class="card-icon">💎</div>
+                <h3>Mines</h3>
+                <p>Grade 5x5 · Encontre diamantes</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="game-area" class="game-area"></section>
+    <div id="toast-container" class="toast-container"></div>
+    <canvas id="confetti-canvas" class="hidden"></canvas>
+
+    <footer>
+        <p>⚠️ Projeto educacional · Sem apostas reais · Apenas para estudo de desenvolvimento web</p>
+        <p>ChicoBet Casino © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
